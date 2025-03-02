@@ -1,7 +1,7 @@
 # Maintainer: Seunghun Kim <seunghunkim at proton dot me>
 pkgname=clipcascade-bin
 pkgver=3.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="ClipCascade: Sync clipboard across multiple devices"
 arch=('x86_64')
 url="https://github.com/Sathvik-Rao/ClipCascade"
@@ -19,6 +19,7 @@ depends=(
     'python-pyfiglet'
     'python-beautifulsoup4'
     'python-aiortc'
+    'python-ifaddr'
 )
 makedepends=('unzip')
 source=(
@@ -47,6 +48,8 @@ package() {
     install -d "${pkgdir}/usr/bin"
     install -Dm755 /dev/stdin "${pkgdir}/usr/bin/clipcascade" << EOF
 #!/bin/sh
+# Create ~/.clipcascade if it doesn't exist
+[ -d "\${HOME}/.clipcascade" ] || mkdir -p "\${HOME}/.clipcascade"
 exec python /usr/share/clipcascade/main.py "\$@"
 EOF
 

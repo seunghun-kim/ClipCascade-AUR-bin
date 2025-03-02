@@ -1,4 +1,5 @@
 *.zip
 *.pkg.tar.zst
-src/
 *.png
+src/
+test/
