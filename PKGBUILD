@@ -1,12 +1,13 @@
 # Maintainer: Seunghun Kim <seunghunkim at proton dot me>
 pkgname=clipcascade-bin
 pkgver=3.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="ClipCascade: Sync clipboard across multiple devices"
 arch=('x86_64')
 url="https://github.com/Sathvik-Rao/ClipCascade"
 license=('GPL-3.0')
 depends=(
+    'tk'
     'python'
     'python-pillow'
     'python-plyer'
