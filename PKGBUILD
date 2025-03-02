@@ -22,14 +22,14 @@ depends=(
 makedepends=('unzip')
 source=(
     "$url/releases/download/$pkgver/ClipCascade_Linux.zip"
+    "clipcascade.png::https://raw.githubusercontent.com/Sathvik-Rao/ClipCascade/refs/tags/3.0.0/logo/logo.png"
     "clipcascade.desktop"
-    "clipcascade.png"
     "fix-write-path.patch"
 )
 sha256sums=(
     '66c02e84c47cdc9eb2686ab551f52bbfb38fbce091e2a54002807612afd2c65f'
-    '6b90177c1c1ed1e575cb1f553cd2cde4b2b92d32743e32ec046aaf2ed3674594'
     '54974fabd99d918ea142163db566a98d3ca1a43b5a0f3d0c7ed7224ecccbd3b9'
+    '6b90177c1c1ed1e575cb1f553cd2cde4b2b92d32743e32ec046aaf2ed3674594'
     'c831a463b7ddb2e22d53e5f80996e3305183ff88d671a32f73000783f71df13f'
 )
 
@@ -42,7 +42,6 @@ prepare() {
 package() {
     install -d "${pkgdir}/usr/share/clipcascade"
     cp -r "${srcdir}/ClipCascade/"* "${pkgdir}/usr/share/clipcascade/"
-    chmod -R 644 "${pkgdir}/usr/share/clipcascade"
 
     install -d "${pkgdir}/usr/bin"
     install -Dm755 /dev/stdin "${pkgdir}/usr/bin/clipcascade" << EOF
