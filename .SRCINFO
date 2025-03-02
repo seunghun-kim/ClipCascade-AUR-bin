@@ -1,11 +1,12 @@
 pkgbase = clipcascade-bin
 	pkgdesc = ClipCascade: Sync clipboard across multiple devices
 	pkgver = 3.0.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/Sathvik-Rao/ClipCascade
 	arch = x86_64
 	license = GPL-3.0
 	makedepends = unzip
+	depends = tk
 	depends = python
 	depends = python-pillow
 	depends = python-plyer
