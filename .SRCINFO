@@ -1,0 +1,26 @@
+pkgbase = clipcascade-bin
+	pkgdesc = ClipCascade: Sync clipboard across multiple devices
+	pkgver = 3.0.0
+	pkgrel = 1
+	url = https://github.com/Sathvik-Rao/ClipCascade
+	arch = x86_64
+	license = GPL-3.0
+	depends = python
+	depends = python-pillow
+	depends = python-plyer
+	depends = python-pycryptodome
+	depends = python-pystray
+	depends = python-requests
+	depends = python-websocket-client
+	depends = python-xxhash
+	depends = python-pyfiglet
+	depends = python-beautifulsoup4
+	depends = python-aiortc
+	source = https://github.com/Sathvik-Rao/ClipCascade/releases/download/3.0.0/ClipCascade_Linux.zip
+	source = clipcascade.desktop
+	source = clipcascade.png
+	sha256sums = 66c02e84c47cdc9eb2686ab551f52bbfb38fbce091e2a54002807612afd2c65f
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = clipcascade-bin

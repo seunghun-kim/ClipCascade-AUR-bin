@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ClipCascade
+Comment=Sync clipboard across multiple devices
+Exec=/usr/bin/clipcascade
+Icon=clipcascade
+Type=Application
+Terminal=false
+Categories=Utility;
