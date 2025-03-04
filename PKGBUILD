@@ -1,7 +1,7 @@
 # Maintainer: Seunghun Kim <seunghunkim at proton dot me>
 pkgname=clipcascade-bin
 pkgver=3.0.0
-pkgrel=3
+pkgrel=4
 pkgdesc="ClipCascade: Sync clipboard across multiple devices"
 arch=('x86_64')
 url="https://github.com/Sathvik-Rao/ClipCascade"
@@ -20,6 +20,7 @@ depends=(
     'python-beautifulsoup4'
     'python-aiortc'
     'python-ifaddr'
+    'xclip'
 )
 makedepends=('unzip')
 source=(

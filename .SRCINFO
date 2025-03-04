@@ -1,7 +1,7 @@
 pkgbase = clipcascade-bin
 	pkgdesc = ClipCascade: Sync clipboard across multiple devices
 	pkgver = 3.0.0
-	pkgrel = 3
+	pkgrel = 4
 	url = https://github.com/Sathvik-Rao/ClipCascade
 	arch = x86_64
 	license = GPL-3.0
@@ -19,6 +19,7 @@ pkgbase = clipcascade-bin
 	depends = python-beautifulsoup4
 	depends = python-aiortc
 	depends = python-ifaddr
+	depends = xclip
 	source = https://github.com/Sathvik-Rao/ClipCascade/releases/download/3.0.0/ClipCascade_Linux.zip
 	source = clipcascade.png::https://raw.githubusercontent.com/Sathvik-Rao/ClipCascade/refs/tags/3.0.0/logo/logo.png
 	source = clipcascade.desktop
